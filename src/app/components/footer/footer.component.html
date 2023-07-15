@@ -1,0 +1,15 @@
+<footer>
+  <div class="contact">
+    <img src="../../../assets/terminalicon.png" alt="terminalicon">
+    <p>CONNECT WITH ME!<span>_</span></p>
+  </div>
+  <ul>
+    <li *ngFor="let network of networks" >
+      <a [href]="network.url" target="_blank" [style.background]="network.background">
+        <p>{{network["name"]}}</p>
+        <img [src]="network.icon" [alt]="network.name">
+      </a>
+    </li>
+  </ul>
+  <p class="copy">Built From Scratch With &#10084;&#65039;. © Copyright 2023, Simon G Software. All Rights Reserved.</p>
+</footer>
