@@ -2,7 +2,6 @@ section.personStart{
   display: flex;
   justify-content: space-evenly;
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 14%, rgba(51,138,245,1) 95%);
   align-items: center;
   padding: 1em;
   gap: 15px;
@@ -11,6 +10,8 @@ section.personStart{
     border-radius: 100%;
     border: 5px solid #338AF5;
     transition: ease 1s;
+    max-width: 200px;
+    max-height: 200px;
     &:hover{
       transform: scale(1.1);
     }
@@ -28,12 +29,11 @@ section.personStart{
     font-size: 50px;
     span.text_gradient {
       font-size: 50px;
-      background-image: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+      color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-      animation: gradientMotion 4s infinite linear;
+      animation: gradientMotion 5s linear infinite;
     }
   }
   .description {

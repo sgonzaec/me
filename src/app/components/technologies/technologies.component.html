@@ -1,0 +1,49 @@
+<section>
+    <h2 class="title">Technologies</h2>
+    <h3 class="sub-title">FrontEnd</h3>
+    <ul>
+      <li *ngFor="let technology of technologies.front">
+        <a href={{technology.link}} target="_blank" rel="noopener noreferrer">
+          <p>{{technology.name}}</p>
+          <img [src]="technology.icon" [alt]="technology.name" />
+        </a>
+      </li>
+    </ul>
+    <h3 class="sub-title">BackEnd</h3>
+    <ul>
+      <li *ngFor="let technology of technologies.back">
+        <a href={{technology.link}} target="_blank" rel="noopener noreferrer">
+          <p>{{technology.name}}</p>
+          <img [src]="technology.icon" [alt]="technology.name" />
+        </a>
+      </li>
+    </ul>
+    <h3 class="sub-title">Frameworks</h3>
+    <ul>
+      <li *ngFor="let technology of technologies.frameworks">
+        <a href={{technology.link}} target="_blank" rel="noopener noreferrer">
+          <p>{{technology.name}}</p>
+          <img [src]="technology.icon" [alt]="technology.name" />
+        </a>
+      </li>
+    </ul>
+    <h3 class="sub-title">Cloud</h3>
+    <ul>
+      <li *ngFor="let technology of technologies.cloud">
+        <span>{{technology.alert}}</span>
+        <a href={{technology.link}} target="_blank" rel="noopener noreferrer">
+          <p>{{technology.name}}</p>
+          <img [src]="technology.icon" [alt]="technology.name" />
+        </a>
+      </li>
+    </ul>
+    <h3 class="sub-title">Others</h3>
+    <ul>
+      <li *ngFor="let technology of technologies.others">
+        <a href={{technology.link}} target="_blank" rel="noopener noreferrer">
+          <p>{{technology.name}}</p>
+          <img [src]="technology.icon" [alt]="technology.name" />
+        </a>
+      </li>
+    </ul>
+</section>
