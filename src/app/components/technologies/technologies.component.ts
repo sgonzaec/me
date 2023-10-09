@@ -96,6 +96,18 @@ export class TechnologiesComponent {
         icon: 'https://arunpotti.files.wordpress.com/2021/12/microsoft_azure.svg_.png',
         link: 'https://azure.microsoft.com/en-us/',
         alert: 'In progress...'
+      },
+      {
+        name: 'Vercel',
+        icon: 'https://logowik.com/content/uploads/images/vercel1868.jpg',
+        link: 'https://vercel.com/',
+        alert: 'Intermediate'
+      },
+      {
+        name: 'Railway',
+        icon: 'https://railway.app/brand/logo-dark.png',
+        link: 'https://railway.app/',
+        alert: 'Intermediate'
       }
     ],
     others: [

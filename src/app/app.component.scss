@@ -1,0 +1,19 @@
+.alert {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  z-index: 2;
+}
+
+.alert-error {
+  background-color: red;
+  color: white;
+}
+
+.alert-success {
+  background-color: green;
+  color: white;
+}

@@ -40,5 +40,9 @@ section {
     &:hover {
       opacity: 0.8;
     }
+    &.disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
   }
 }

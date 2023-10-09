@@ -1,6 +1,6 @@
 <section>
   <h2 class="title">Contact Me!</h2>
-  <form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+  <form #basicForm="ngForm" (submit)="onSubmit(basicForm.value, basicForm)">
     <div class="inputs_list">
       <div class="form-group">
         <label for="name">Name</label>
@@ -19,6 +19,6 @@
         <textarea class="form-control" ngModel id="message" name="message" rows="3"></textarea>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary" [ngClass]="{'disabled': loading}">{{loading ? 'Enviando...' : 'Enviar'}}</button>
   </form>
 </section>
